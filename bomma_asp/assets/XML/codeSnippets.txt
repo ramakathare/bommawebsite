@@ -1,0 +1,44 @@
+##################################### 
+<%
+
+    
+        SessionFactory sessions = new Configuration().configure().buildSessionFactory();
+        Session session1 = sessions.openSession();
+
+        System.out.println(session1.isConnected());
+
+        // Perform life-cycle operations under a transaction
+        Transaction tx = null;
+
+        tx = session1.beginTransaction();
+
+        // Create a Person object and save it
+        News N1 = new News();
+        N1.setNewsDate(new Date(1911111111));
+        N1.setNewsContent("Hello this is second news");
+        session1.save(N1);
+
+              // Retrieve the person objects
+        News news = (News) session1.get(News.class, N1.getId());
+        System.out.println("News Date retrieved = " + news.getId());
+        System.out.println("News Date retrieved = " + news.getNewsDate());
+        System.out.println("News COntent = " + news.getNewsContent());
+
+        News N2 = new News();
+        N2.setNewsDate(new Date(22222222));
+        N2.setNewsContent("Hello this is third news");
+        session1.save(N2);
+        
+        
+        
+        tx.commit();
+        
+        tx = null;
+
+
+        // Display tables
+        //   HibernateUtil.checkData("select * from news");
+
+    %>
+
+#####################################

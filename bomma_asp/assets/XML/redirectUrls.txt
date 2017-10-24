@@ -1,0 +1,2 @@
+getFlash.b = http://fpdownload.macromedia.com/pub/flashplayer/updaters/11/flashplayer_11_plugin_debug_32bit.exe
+bommaProfile.b = assets/files/BommaProfile_2011.pdf

@@ -1,0 +1,164 @@
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 8
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery8",
+	dimensions: [161, 121], 
+	imagearray: [
+		["assets/gallaryImages/CollegePhotos/1.jpg", "https://picasaweb.google.com/109998487761933095274/CollegePhotos?authuser=0&feat=directlink", "_new", "Building Photos"],
+		["http://i30.tinypic.com/531q3n.jpg", "https://picasaweb.google.com/109998487761933095274/CollegePhotos?authuser=0&feat=directlink", "_new", "Induction Programme 2011"],
+		["http://i26.tinypic.com/11l7ls0.jpg", "https://picasaweb.google.com/109998487761933095274/CollegePhotos?authuser=0&feat=directlink", "_new", "Induction Programme 2011"],
+		["http://i29.tinypic.com/xp3hns.jpg", "https://picasaweb.google.com/109998487761933095274/CollegePhotos?authuser=0&feat=directlink", "_new", "Induction Programme 2011"]
+		
+		
+	],
+	autoplay: [true, 2500, 2],
+	persist: false,
+	fadeduration: 500,
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//Keyword "this": references current gallery instance
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+})
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 7
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery7", 
+	dimensions: [161, 121],  
+	imagearray: [
+		
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Independence Day 2011"],
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Independence Day 2011"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Independence Day 2011"],
+		["http://i31.tinypic.com/119w28m.jpg", "", "", "Independence Day 2011"]
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//Keyword "this": references current gallery instance
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+})
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 6
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery6", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "IGNIZO 2kX"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "IGNIZO 2kX"],
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "IGNIZO 2kX"],
+		
+		["http://i31.tinypic.com/119w28m.jpg", "", "", "IGNIZO 2kX"]
+	],
+	autoplay: [true, 2500, 2], 
+	persist: true, 
+	fadeduration: 500, 
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){ //event that fires after each slide is shown
+		//Keyword "this": references current gallery instance
+		//curslide: returns DOM reference to current slide's DIV (ie: try alert(curslide.innerHTML)
+		//i: integer reflecting current image within collection being shown (0=1st image, 1=2nd etc)
+	}
+})
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 5
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery5", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Robotics Lab"],
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Robotics Lab"],
+				["http://i31.tinypic.com/119w28m.jpg", "", "", "Robotics Lab"],
+				["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Robotics Lab"]
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){}
+})
+
+
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 4
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery4", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Laboratories"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Laboratories"],
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Laboratories"],
+		["http://i31.tinypic.com/119w28m.jpg", "", "Laboratories", ""]
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){ }
+})
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 3
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery3", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Banners"],
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Banners"],
+		["http://i31.tinypic.com/119w28m.jpg", "", "", "Banners"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Banners"]
+		
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){ },
+	preloadfirst:false,
+	onslide:function(curslide, i){}
+})
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 2
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery2", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Banners"],
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Banners"],
+		["http://i31.tinypic.com/119w28m.jpg", "", "", "Banners"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Banners"]
+		
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){},
+	preloadfirst:false,
+	onslide:function(curslide, i){}
+})
+		
+		
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 1
+var mygallery=new simpleGallery({
+	wrapperid: "simplegallery1", 
+	dimensions: [161, 121],  
+	imagearray: [
+		["http://i26.tinypic.com/11l7ls0.jpg", "http://en.wikipedia.org/wiki/Swimming_pool", "_new", "Banners"],
+		["http://i29.tinypic.com/xp3hns.jpg", "http://en.wikipedia.org/wiki/Cave", "", "Banners"],
+		["http://i31.tinypic.com/119w28m.jpg", "", "", "Banners"],
+		["http://i30.tinypic.com/531q3n.jpg", "", "", "Banners"]
+		
+	],
+	autoplay: [true, 2500, 2], 
+	persist: false, 
+	fadeduration: 500, 
+	oninit:function(){ },
+	preloadfirst:false,
+	onslide:function(curslide, i){}
+})

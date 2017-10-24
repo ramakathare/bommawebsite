@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+
+.c4mLogin{
+	border-radius:10px;
+	/*behavior: url(http://10.0.0.16:8080/bomma/assets/scripts/border-radius.htc);	*/
+}
+
+.leftNav a{
+	letter-spacing: 0.00em;
+}
+
+
+ul#SpryMenu{
+
+    _right: -4px;
+}
+
+ul#SpryMenu li.mainMenuLeaf{
+ _margin-left:-1px;
+}
+
+ul#SpryMenu li.mainMenuLeaf a.mainMenuLeafA{
+
+	_width:60px;
+	_overflow-x:visible;
+       
+}
+.bodyContainer{
+  _height: 600px;
+      _overflow-y:visible;
+}
+
+.gallaryContainer{
+	position:relative;
+	
+}
+
+#gallaryDiv{
+   _height:235px; 
+	
+}
+
+.gallaryBox{
+  
+}
+
+
+
+.footer1, .footerCenter{
+	_margin-left:0%
+}
+#ft .ftMenu1{
+	_margin-left:2%
+}
+
+#ft .ftMenu2{
+	_margin-left:2%
+}
+
+.todaysQuote{
+
+   _Margin-right:10px
+
+}
+
+.contactForm
+{
+    _margin-left:-5px;
+    _margin-right:5px;
+    _pading:0 8px 2px 0;
+
+    
+}

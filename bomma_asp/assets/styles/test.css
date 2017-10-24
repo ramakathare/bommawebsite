@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+.hideDiv{
+	display:none;
+}
+
+.gallaryContainer .paneContent{
+    position:relative;
+    text-align: center;
+
+}
+.gallaryContainer{
+	margin-top:29px;
+	margin-bottom: 5px;
+}
+.gallaryBox{
+
+    border: 3px solid #DBDBDB;
+    float: left;
+    height: 121px;
+    margin: 0.1em;
+    width: 161px;
+
+   /* _margin: 0.15em; */
+    
+}
+
+
+
+.gallerydesctext, .gallerydescbg{
+	padding: 1px 0;
+}
+
+.newsEventsWrapper{
+	height:284px;
+	overflow:hidden;
+	padding:5px;
+        margin-top:-5px;
+        margin-bottom: 5px;
+       
+
+}
+
+.ticker li{
+	border-bottom:1px dotted #999999; 
+	margin-bottom:5px;
+	padding-top:3px;
+        padding-bottom:2px;
+}
+
+.ticker li.alt div{
+/*	color:#FEAC1C;*/
+}
+
+.ticker div{
+	color:#034F71;
+	font-weight:bold;
+	font-size:0.9em;
+}
+
+.ticker a{
+	color:#3380B8;
+}
+
+.hitCounter{
+	margin:10px 0;
+}
+
+.bodyMatter2, .bodyMatter3, .rightMatter2{
+	margin-top: 2em;
+}
+
+.leftMatter2{
+	margin-top:1em;
+}
+
+#ft{
+ background:#FEAC1C;
+
+}
+
+#ft .ftMenu1{
+	margin-left:14%
+}
+
+#ft .ftMenu2{
+	margin-left:7%
+}
+
+#ft .menu{
+	float:left;
+	
+}
+
+#ft .menu li{
+	
+	padding: 3px;
+	
+}
+
+#ft .menu li a{
+	color:white;
+	text-align:left;
+}
+
+.footer1, .footer2, .footerCenter{
+	float:left;
+	text-align: center;
+	color: white;
+	width:32%;
+}
+
+.footer2{
+	background:url(../images/ftBackground.gif) bottom right no-repeat;
+	padding:23px 0;
+}
+.footer1{
+/*	background:url(../images/ftBackground.gif) bottom left no-repeat; */
+}
+
+.footer1, .footerCenter{
+	margin-left:1.99%;
+        position: relative;
+}
+
+
+
+
+.footerCenter{
+	padding-top: 61px;
+
+}
+
+.footerCenter *{
+	z-index:5;
+}
+
+.footerCenter .copyRight{
+	padding-bottom:15px;
+}
+
+.more{
+    cursor: pointer;
+}
+
+.slideThis{
+    display:none;
+   
+}
+
+.heading{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left:2px;
+}
+
+.groupOfInst{
+    margin-left: 35px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.vscrollerbase{
+    top:0.2em;
+}
+
+.chairmanImg{
+    float:left;
+    width:50px;
+    margin-right:5px;
+}
+
+.vBarLeft{
+
+    background-image: url("../images/vBar.jpg");
+    background-repeat : no-repeat;
+    background-position: 1px 0;
+    height:250px;
+    left:-13px;
+    position: absolute;
+    top: 10%;
+    width: 16px;
+    cursor:pointer;
+}
+.vBarRight{
+    background-image: url("../images/vBar.jpg");
+    background-repeat : no-repeat;
+    background-position: 6px 0;
+    height:250px;
+    right:32%;
+    position: absolute;
+    top: 10%;
+    width: 16px;
+    cursor:pointer;
+}
+
+.vBarLeftContainer{
+    position: relative;
+}
+
+body #yui-main div.rightNewsDiv{
+    width:31.5%;
+}
+

@@ -1,0 +1,356 @@
+@charset "utf-8";
+/* CSS Document */
+
+html{
+	margin:0px;
+	padding:0px;
+}
+
+body{
+	background:url("../images/bodyBG.jpg") repeat-x scroll center 0 transparent;
+	color:#444444;
+	min-width:976px;	
+}
+
+
+
+#doc4{
+}
+
+#hd{
+	 position: relative;
+}
+
+.bommaLogo{
+	float: left;
+    height: 80px;
+}
+
+.logo
+{
+    float:left;
+    margin-top:12px;
+    position:absolute;
+    left:10px;
+}
+
+.collegeName ul{
+    color: #CFF0FF;
+    font-size: 12px;
+    margin-left: 175px;
+    position: absolute;
+    top: 6px;
+    font-weight:bold;
+}
+
+.bannerNav{
+ 	height: 110px;
+   
+   
+    background:url("../images/bgr1.jpg") no-repeat scroll center 0 transparent;
+}
+
+#hd .band{
+	background: none repeat scroll 0 0 #D4ECF0;
+    height: 10px;
+	margin-bottom:10px;
+}
+
+.bannerNav .menu{
+	text-align:right;
+	 line-height: 170px; 
+	 /* _margin-bottom:-81px; */
+}
+ 
+.bannerNav .menu li{
+	display:inline;
+ }
+
+.bannerNav .menu li.first a{
+	-moz-border-radius-topleft: 10px;
+	-webkit-border-top-left-radius: 10px;
+	-border-top-left-radius: 10px;
+ }
+ .bannerNav .menu li.last a{
+	-moz-border-radius-topright: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-border-top-right-radius: 10px;
+ }
+ 
+
+.bannerNav .menu li a{
+    background-image: url("../images/b_meniu.jpg");
+    background-repeat: repeat-x;
+    background-position: 0 0;
+    color: #B7D6EC;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: -3px;
+    padding: 17px 11px;
+    text-decoration: none;
+}
+
+.bannerNav .menu li a:hover{
+	background-position: 0 -46px;	
+	color:white;
+}
+
+
+.centers{
+	 position: absolute;
+    right: 23px;
+    top:3px;
+}
+
+.center{
+	float: right;
+    
+}
+
+.centers .center span{
+	color: white;
+    display: block;
+    font-size: 0.8em;
+    line-height: 0.7em;
+}
+
+.flashContainer{
+	
+	width:974px;
+        height:308px;
+        background: url("../banner1/images/Optimized-05.jpg") no-repeat;
+
+
+}
+
+#bd{
+    position:relative;
+    padding-top:20px;
+}
+
+.bodyContainer{
+  min-height: 600px
+}
+.paneTitle {
+    background: none repeat scroll 0 0 #ecf5f5;
+    clear: both;
+    color: #006d67;
+    font-family: Verdana,Arial,san-serif;
+    font-size: 90%;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    margin: 0 0 0.6em;
+    padding: 4px 0 4px 8px;
+    text-transform: uppercase;
+}
+
+
+.leftMatter1 .paneTitle{
+
+}
+
+.subDiv{
+    margin-bottom: 10px;
+}
+
+
+
+
+
+a{
+	text-decoration:none;
+	color: #8598A2;
+	outline:none;
+}
+
+a:visited{
+	color: #8598A2;
+}
+
+.collegeName a{
+	text-decoration:none;
+	color: inherit;
+	outline:none;
+}
+
+.collegeName a:visited{
+	color: inherit;
+}
+
+.more a{
+    color:#666666
+}
+.more a:visited{
+    color:#666666
+}
+
+td{
+	vertical-align:top;
+}
+td.first{
+	padding-right:10px;
+}
+p{
+	line-height:1.5em;
+        padding:5px 0px 3px 2px;
+}
+
+.c4mLogin{
+  	background-color: #75D9EB;
+ 
+    text-align: center;
+    
+	height:123px;
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+}
+.c4mLogin span{
+	line-height:2em;
+	float:left;
+}
+
+.c4mLogin input{
+	margin: 3px 0 8px 6px;
+    width: 116px;
+}
+
+.c4mLogin button{
+	margin-top: 5px;
+    width: 50px;
+}
+
+.newsEventsContainer marquee{
+	height:200px;
+}
+
+.underline{
+ border-bottom:1px solid #888888;
+}
+
+.marginTop10{
+	margin-top:10px;
+}
+
+body .yui-gb .cuswidth1{
+	width:24%;
+}
+
+body .yui-gb .cuswidth2{
+	width:40%;
+}
+
+.gallaryDiv{
+	background-color:#FEAC1A;
+}
+
+/*#bd{
+	margin-top:-16px;
+}*/
+
+#bd #yui-main{
+}
+
+#bd #yui-main .yui-b{
+    padding-left: 5px; 
+   
+}
+
+.leftNav{
+	margin-top:6px;
+     
+        padding-bottom: 5px;
+        padding-left: 3px;
+
+}
+
+
+
+.leftNav  li{
+	border-bottom:1px dotted;
+	color: #FEAC1C;
+}
+
+.leftNav a{
+	color: #3380B8;
+    font-family: Verdana,Arial,san-serif;
+    font-size: 0.88em;
+    font-weight: 400;
+    
+    line-height: 1.9em;
+	display:block;
+	padding-left:1px;
+	/* _ letter-spacing: 0.00em; */
+}
+
+
+
+.leftNav a:visited{
+	color: #3380B8;
+}
+
+.leftNav a:hover{
+	color:#FFFFFF;
+	background:#75D9EB
+}
+
+
+
+
+
+.clearFloat{
+	height:0px;
+	line-height:0px;
+	float:none;
+	clear:both;
+}
+
+.impNotes {
+
+    background: #FDAC1D url("../images/AnnImg.jpg") no-repeat scroll 0 center ;
+    border: 1px solid #666666;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 10px 10px 10px 50px;
+    position: absolute;
+    text-align: center;
+    text-decoration: blink;
+   left:245px;
+    width: 200px;
+    z-index: 24;
+    -moz-border-radius : 5px;
+     border-width: 1px 2px 2px 1px;
+}
+
+.closeDiv 
+{
+    background: transparent url("../images/closebutton.jpg") no-repeat center center;
+    display: block;
+    float: right;
+    height: 15px;
+    position: relative;
+    right: -5px;
+    top: -5px;
+    width: 15px;
+    border:1px solid #666666;
+    -moz-border-radius : 2px;
+    
+    
+}
+
+.ui-tabs .closeDiv
+{
+    top:7px;
+    right:7px;
+}
+
+.closeDiv:hover
+{
+    border:1px solid #FFFFFF;
+}
+
+.pointer
+{
+    cursor:pointer;
+    text-decoration:underline;
+}

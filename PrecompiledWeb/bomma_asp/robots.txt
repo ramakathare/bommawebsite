@@ -1,0 +1,10 @@
+﻿User-agent: *
+Disallow: /assets/
+Disallow: /admin.aspx
+Disallow: /CaptchaFeed.aspx
+Disallow: /error.aspx
+Disallow: /getResult.aspx
+Disallow: /image.aspx
+Disallow: /results.aspx
+Disallow: /Test.aspx
+Disallow: /Turing.aspx

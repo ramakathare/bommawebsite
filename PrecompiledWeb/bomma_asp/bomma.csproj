@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProjectGuid>{6FA89C2D-3062-46CA-9C0B-72625E76D738}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <NoStandardLibraries>false</NoStandardLibraries>
+    <AssemblyName>WindowsApplication</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>bomma</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="aachievements.aspx" />
+    <Content Include="aboutUs.aspx" />
+    <Content Include="academicCalendar.aspx" />
+    <Content Include="admin.aspx" />
+    <Content Include="assets\banner1\BannerFX.swf" />
+    <Content Include="assets\banner1\changelog.txt" />
+    <Content Include="assets\banner1\images.xml" />
+    <Content Include="assets\banner1\images\Optimized-01.jpg" />
+    <Content Include="assets\banner1\images\Optimized-02.jpg" />
+    <Content Include="assets\banner1\images\Optimized-03.jpg" />
+    <Content Include="assets\banner1\images\Optimized-04.jpg" />
+    <Content Include="assets\banner1\images\Optimized-05.jpg" />
+    <Content Include="assets\banner1\index.html" />
+    <Content Include="assets\banner1\settings.xml" />
+    <Content Include="assets\banner1\style.css" />
+    <Content Include="assets\banner1\swfobject.js" />
+    <Content Include="assets\faculty\hanumanthaRao.jpg" />
+    <Content Include="assets\faculty\Jadav.jpg" />
+    <Content Include="assets\faculty\kishore.jpg" />
+    <Content Include="assets\faculty\NageswaraRao.jpg" />
+    <Content Include="assets\faculty\nareshKumarK.jpg" />
+    <Content Include="assets\faculty\noPic.jpg" />
+    <Content Include="assets\faculty\ramaRao.jpg" />
+    <Content Include="assets\faculty\shankarsir.jpg" />
+    <Content Include="assets\faculty\sivaPrasad.jpg" />
+    <Content Include="assets\faculty\sushma.jpg" />
+    <Content Include="assets\faculty\varaprasad.jpg" />
+    <Content Include="assets\gallaryImages\Advertisement_2011\1.jpg" />
+    <Content Include="assets\gallaryImages\Advertisement_2011\2.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\1.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\2.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\3.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\4.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\5.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\6.jpg" />
+    <Content Include="assets\gallaryImages\Carnival_2012\7.jpg" />
+    <Content Include="assets\gallaryImages\Cloud_Computing_Seminar\1.jpg" />
+    <Content Include="assets\gallaryImages\Cloud_Computing_Seminar\2.jpg" />
+    <Content Include="assets\gallaryImages\College_Ad_2012\1.jpg" />
+    <Content Include="assets\gallaryImages\Freshers_Party_2011\1.jpg" />
+    <Content Include="assets\gallaryImages\Freshers_Party_2011\2.jpg" />
+    <Content Include="assets\gallaryImages\Freshers_Party_2011\3.jpg" />
+    <Content Include="assets\gallaryImages\Freshers_Party_2011\4.jpg" />
+    <Content Include="assets\gallaryImages\Freshers_Party_2011\5.jpg" />
+    <Content Include="assets\gallaryImages\Ignizo_2kX\1.jpg" />
+    <Content Include="assets\gallaryImages\Ignizo_2kX\2.jpg" />
+    <Content Include="assets\gallaryImages\Ignizo_2kX\3.jpg" />
+    <Content Include="assets\gallaryImages\Ignizo_2kX\4.jpg" />
+    <Content Include="assets\gallaryImages\Induction_Programme_2011\1.jpg" />
+    <Content Include="assets\gallaryImages\Induction_Programme_2011\2.jpg" />
+    <Content Include="assets\gallaryImages\Induction_Programme_2011\3.jpg" />
+    <Content Include="assets\gallaryImages\ISpark_Inauguration_2012\1.jpg" />
+    <Content Include="assets\gallaryImages\ISpark_Inauguration_2012\2.jpg" />
+    <Content Include="assets\gallaryImages\ISpark_Inauguration_2012\3.jpg" />
+    <Content Include="assets\gallaryImages\ISpark_Inauguration_2012\4.jpg" />
+    <Content Include="assets\gallaryImages\ISpark_Inauguration_Video\1.jpg" />
+    <Content Include="assets\gallaryImages\Laboratories\1.jpg" />
+    <Content Include="assets\gallaryImages\Laboratories\2.jpg" />
+    <Content Include="assets\gallaryImages\Laboratories\3.jpg" />
+    <Content Include="assets\gallaryImages\Laboratories\4.jpg" />
+    <Content Include="assets\gallaryImages\Laboratories\5.jpg" />
+    <Content Include="assets\gallaryImages\More\1.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\1.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\2.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\3.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\4.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\5.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\6.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\7.jpg" />
+    <Content Include="assets\gallaryImages\Sports_JAN2012\8.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\1.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\2.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\3.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\4.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\5.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\6.jpg" />
+    <Content Include="assets\gallaryImages\Synergy2K12_Videos\7.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\1.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\10.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\11.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\12.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\13.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\14.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\2.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\3.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\4.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\5.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\6.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\7.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\8.jpg" />
+    <Content Include="assets\gallaryImages\Synergy_2k12\9.jpg" />
+    <Content Include="assets\gallaryImages\TimesResearchMedia\1.jpg" />
+    <Content Include="assets\gallaryImages\TimesResearchMedia\2.jpg" />
+    <Content Include="assets\gallaryImages\TimesResearchMedia_Video\1.jpg" />
+    <Content Include="assets\images\ajaxload.gif" />
+    <Content Include="assets\images\AnnImg.jpg" />
+    <Content Include="assets\images\bg.gif" />
+    <Content Include="assets\images\bgr.jpg" />
+    <Content Include="assets\images\bgr1.jpg" />
+    <Content Include="assets\images\bodyBG.jpg" />
+    <Content Include="assets\images\bomma_logo.jpg" />
+    <Content Include="assets\images\bomma_logo1.jpg" />
+    <Content Include="assets\images\bullet1.jpg" />
+    <Content Include="assets\images\b_meniu.jpg" />
+    <Content Include="assets\images\Chairman.jpg" />
+    <Content Include="assets\images\Chairman1.jpg" />
+    <Content Include="assets\images\clickLike.jpg" />
+    <Content Include="assets\images\closebutton.jpg" />
+    <Content Include="assets\images\connect4mlogo.png" />
+    <Content Include="assets\images\connectlogo.png" />
+    <Content Include="assets\images\ContactForm.gif" />
+    <Content Include="assets\images\ContactForm1.gif" />
+    <Content Include="assets\images\fb.jpg" />
+    <Content Include="assets\images\fbBackground.jpg" />
+    <Content Include="assets\images\fevicon.ico" />
+    <Content Include="assets\images\ftBackground.gif" />
+    <Content Include="assets\images\getFlash.gif" />
+    <Content Include="assets\images\Infosys.gif" />
+    <Content Include="assets\images\left.gif" />
+    <Content Include="assets\images\left.png" />
+    <Content Include="assets\images\leftNavBottomBackground.jpg" />
+    <Content Include="assets\images\loading.gif" />
+    <Content Include="assets\images\loading1.gif" />
+    <Content Include="assets\images\loading2.gif" />
+    <Content Include="assets\images\login.jpg" />
+    <Content Include="assets\images\meniu_hover.jpg" />
+    <Content Include="assets\images\Microsoft-Innovation-Center.jpg" />
+    <Content Include="assets\images\microsoft.jpg" />
+    <Content Include="assets\images\noFLASH.jpg" />
+    <Content Include="assets\images\OrkutRSS.jpg" />
+    <Content Include="assets\images\pause.gif" />
+    <Content Include="assets\images\play.gif" />
+    <Content Include="assets\images\right.gif" />
+    <Content Include="assets\images\right.png" />
+    <Content Include="assets\images\scrollbase.jpg" />
+    <Content Include="assets\images\secretary.jpg" />
+    <Content Include="assets\images\SIEMENS-Center-For-Excellen.jpg" />
+    <Content Include="assets\images\siemens.jpg" />
+    <Content Include="assets\images\tcs.jpg" />
+    <Content Include="assets\images\treasurer.jpg" />
+    <Content Include="assets\images\Twitter.jpg" />
+    <Content Include="assets\images\vBar.jpg" />
+    <Content Include="assets\images\vBar1.jpg" />
+    <Content Include="assets\images\warn.png" />
+    <Content Include="assets\images\youtube_button.gif" />
+    <Content Include="assets\images\youtube_button.jpg" />
+    <Content Include="assets\infrastructure\computerCenter.jpg" />
+    <Content Include="assets\infrastructure\infrastructure.jpg" />
+    <Content Include="assets\infrastructure\laboratories.jpg" />
+    <Content Include="assets\infrastructure\library.jpg" />
+    <Content Include="assets\infrastructure\transport.jpg" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_glass_100_c7e1e1_1x400.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_glass_50_feac1c_1x400.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_glass_75_eeeeee_1x400.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-icons_222222_256x240.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-icons_454545_256x240.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-icons_888888_256x240.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\jquery-ui-1.8.16.custom.css" />
+    <Content Include="assets\jquery-ui-1.8.16.custom\js\jquery-ui-1.8.16.custom.min.js" />
+    <Content Include="assets\scripts\flash_detect_min.js" />
+    <Content Include="assets\scripts\jquery-1.7.min.js" />
+    <Content Include="assets\scripts\script_min.js" />
+    <Content Include="assets\scripts\spryMenuScript.js" />
+    <Content Include="assets\styles\bomma.css" />
+    <Content Include="assets\styles\bomma1.css" />
+    <Content Include="assets\styles\bomma2.css" />
+    <Content Include="assets\styles\formCSS.css" />
+    <Content Include="assets\styles\ie.css" />
+    <Content Include="assets\styles\reset-fonts-grids.css" />
+    <Content Include="assets\styles\spryMenu.css" />
+    <Content Include="assets\styles\test.css" />
+    <Content Include="assets\temp\Invitation.jpg" />
+    <Content Include="assets\temp\Walk-In_8x8cm_2012.jpg" />
+    <Content Include="assets\XML\codeSnippets.txt" />
+    <Content Include="assets\XML\gallary.xml" />
+    <Content Include="assets\XML\redirectUrls.txt" />
+    <Content Include="banner.aspx" />
+    <Content Include="CaptchaFeed.aspx" />
+    <Content Include="chairmansDesk.aspx" />
+    <Content Include="coursesOffered.aspx" />
+    <Content Include="Default.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="departments.aspx" />
+    <Content Include="downloads.aspx" />
+    <Content Include="error.aspx" />
+    <Content Include="exams.aspx" />
+    <Content Include="feedbackForm.aspx" />
+    <Content Include="footer.aspx" />
+    <Content Include="gallary.aspx" />
+    <Content Include="getResults.aspx" />
+    <Content Include="google2b0d6f395bbdc28f.html" />
+    <Content Include="governingBody.aspx" />
+    <Content Include="home.aspx" />
+    <Content Include="IIShiftPolytechnic.aspx" />
+    <Content Include="image.aspx" />
+    <Content Include="informatics.aspx" />
+    <Content Include="infrastructure.aspx" />
+    <Content Include="management.aspx" />
+    <Content Include="mandDisclosure.aspx" />
+    <Content Include="microsoft.aspx" />
+    <Content Include="news.aspx" />
+    <Content Include="pharmacy.aspx" />
+    <Content Include="placements.aspx" />
+    <Content Include="ranksA.aspx" />
+    <Content Include="results.aspx" />
+    <Content Include="robots.txt" />
+    <Content Include="siemensCenter.aspx" />
+    <Content Include="syllabus.aspx" />
+    <Content Include="TechnologyandScience.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="aachievements.aspx.cs">
+      <DependentUpon>aachievements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="aboutUs.aspx.cs">
+      <DependentUpon>aboutUs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="academicCalendar.aspx.cs">
+      <DependentUpon>academicCalendar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\FeedbackResponseDiv.cs" />
+    <Compile Include="App_Code\readDB.cs" />
+    <Compile Include="banner.aspx.cs">
+      <DependentUpon>banner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="chairmansDesk.aspx.cs">
+      <DependentUpon>chairmansDesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="coursesOffered.aspx.cs">
+      <DependentUpon>coursesOffered.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="departments.aspx.cs">
+      <DependentUpon>departments.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="downloads.aspx.cs">
+      <DependentUpon>downloads.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="exams.aspx.cs">
+      <DependentUpon>exams.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="feedbackForm.aspx.cs">
+      <DependentUpon>feedbackForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="footer.aspx.cs">
+      <DependentUpon>footer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gallary.aspx.cs">
+      <DependentUpon>gallary.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="getResults.aspx.cs">
+      <DependentUpon>getResults.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="governingBody.aspx.cs">
+      <DependentUpon>governingBody.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="home.aspx.cs">
+      <DependentUpon>home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="image.aspx.cs">
+      <DependentUpon>image.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="infrastructure.aspx.cs">
+      <DependentUpon>infrastructure.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="management.aspx.cs">
+      <DependentUpon>management.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="microsoft.aspx.cs">
+      <DependentUpon>microsoft.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="news.aspx.cs">
+      <DependentUpon>news.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="placements.aspx.cs">
+      <DependentUpon>placements.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ranksA.aspx.cs">
+      <DependentUpon>ranksA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="results.aspx.cs">
+      <DependentUpon>results.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="siemensCenter.aspx.cs">
+      <DependentUpon>siemensCenter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="syllabus.aspx.cs">
+      <DependentUpon>syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TechnologyandScience.aspx.cs">
+      <DependentUpon>TechnologyandScience.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App_Code\snippets.snippet" />
+    <None Include="assets\banner1\images\01.jpg.exclude" />
+    <None Include="assets\banner1\images\02.jpg.exclude" />
+    <None Include="assets\banner1\images\03.jpg.exclude" />
+    <None Include="assets\banner1\images\04.jpg.exclude" />
+    <None Include="assets\files\BommaProfile_2011.pdf" />
+    <None Include="assets\jquery-ui-1.8.16.custom\css\custom-theme\jquery-ui-1.8.16.custom.css.exclude" />
+    <None Include="assets\jquery-ui-1.8.16.custom\index.html.exclude" />
+    <None Include="assets\jquery-ui-1.8.16.custom\js\1jquery-ui-1.8.16.custom.min.js.exclude" />
+    <None Include="assets\jquery-ui-1.8.16.custom\js\jquery-1.6.2.min.js.exclude" />
+    <None Include="assets\scripts\border-radius.htc.exclude" />
+    <None Include="assets\scripts\flexcroll.js.exclude" />
+    <None Include="assets\scripts\gallaryCalls.js.exclude" />
+    <None Include="assets\scripts\pdfobject.js.exclude" />
+    <None Include="assets\scripts\scripts.js.exclude" />
+    <None Include="assets\scripts\simplegallery.js.exclude" />
+    <None Include="assets\styles\bomma.css.exclude" />
+    <None Include="assets\styles\bomma1.css.exclude" />
+    <None Include="assets\styles\bomma2.css.exclude" />
+    <None Include="assets\styles\flexcrollstyles.css.exclude" />
+    <None Include="assets\styles\formCSS.css.exclude" />
+    <None Include="assets\styles\spryMenu.css.exclude" />
+    <None Include="Default_backup.aspx.exclude" />
+    <None Include="leftContainer.aspx.cs.exclude" />
+    <None Include="leftContainer.aspx.exclude" />
+    <None Include="Test.aspx.cs.exclude" />
+    <None Include="Test.aspx.exclude" />
+    <None Include="Turing.aspx.cs.exclude" />
+    <None Include="Turing.aspx.exclude" />
+    <None Include="web.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSHARP.Targets" />
+  <ProjectExtensions>
+    <VisualStudio AllowExistingFolder="true" />
+  </ProjectExtensions>
+</Project>

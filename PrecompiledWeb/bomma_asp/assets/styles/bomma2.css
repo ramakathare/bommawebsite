@@ -1,0 +1,26 @@
+﻿.imageAndName{height:168px;text-align:center}
+.management{background:#E3e3e3;height:110px}
+.management img{height:100px;padding-right:5px;padding-top:5px}
+.imageAndName div{padding-right:120px;padding-top:50px;text-align:center}
+.imageAndName div span{display:block}
+.upperCase{text-transform:uppercase}
+ul.bullets{margin:5px 2px 2px 10px}
+.bullets li{list-style:square;margin:10px}
+ul.bullets ul{margin-left:30px}
+.bullets li li{list-style:disc}
+.resultFormPaneContent{text-align:center;margin-bottom:15px}
+.resultsDiv{text-align:left}
+.resultsDiv table{font-size:.9em;border-left:1px solid #BBB;width:100%}
+.resultsDiv table th{background:#666;color:#FFF;padding:3px}
+.resultsDiv table tr{height:30px;border-bottom:1px solid #CCC}
+.resultsDiv table tr.row0{background:#ECF5F5}
+.resultsDiv table tr td{border-right:1px solid #BBB;line-height:20px;padding:3px}
+.resultsDiv table tr td.cell1{width:30px}
+.resultsDiv table tr td.cell3,.resultsDiv table tr td.cell4,.resultsDiv table tr td.cell6,.resultsDiv table tr td.cell5{width:10px;text-align:right;padding-right:10px}
+.resultsDiv table tr td.cell6{border-right:none}
+.paneContent .ui-tabs .padTop10{padding:10px 1px 1px}
+.bulletArrow{float:left;height:20px;margin-right:10px;display:block}
+.hasTableSimple table{width:80%;border-top:1px solid #bebebe;margin-left:15%}
+.floatRight,.imageAndName img{float:right}
+.marginLeft20{margin-left:20px;}
+.liNoBorder li{border:none}

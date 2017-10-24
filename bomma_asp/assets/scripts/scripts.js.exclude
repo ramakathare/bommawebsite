@@ -1,0 +1,319 @@
+// @@@@@@@@@@@@@@@@@@@@@@@@@  Gallary 8
+loadingHtml = "<div class='loadingDiv'><img src='assets/images/loading.gif' alt='loading...' /><div>loading..</div></div>";
+
+function scrolled() {
+    
+    impnotesPlacement();
+
+         var offset = $("#rightDiv").offset();
+         var topSlab = 20;
+         var bottomSlab = $("#rightDiv").height() - 250;
+         
+         var positionY = $(window).scrollTop() - offset.top + 30;
+         
+      
+         
+         if(positionY < topSlab) positionY = topSlab;
+         if(positionY > bottomSlab) positionY = bottomSlab;
+         
+         
+        
+         $("#vBarLeftDiv,#vBarRightDiv").css("top",positionY);
+       
+        }
+        
+        
+
+
+        function tick2(){
+            $('#ticker_02 li:first').slideUp(function () { $(this).appendTo($('#ticker_02')).slideDown(); })
+        }
+        
+        
+
+        
+
+        function randomFromTo(from, to){
+            return Math.floor(Math.random() * (to - from + 1) + from);
+        }
+        
+        function initLeftHideShow(){
+  
+            
+            $("#vBarLeftDiv").hover(function() {
+                   $(this).css("background-position","1px -250px");
+                },
+                function(){
+                    $(this).css("background-position","1px 0");
+                });
+             $("#vBarRightDiv").hover(function() {
+                   $(this).css("background-position","6px -250px");
+                },
+                function(){
+                    $(this).css("background-position","6px 0");
+                });
+        }
+        
+        function leftBarClicked(obj1) {
+              if($("#leftNavDiv").is(":visible")){
+                   $("#leftNavDiv").addClass("hideDiv");
+                   $("#rightDiv").css("margin-left","0");
+               }else{
+                   $("#leftNavDiv").removeClass("hideDiv");
+                   $("#rightDiv").css("margin-left","14.8461em");
+               }
+               scrolled();
+            }
+            
+         function rightBarClicked(obj) {
+              
+               if($("#rightNewsDiv").is(":visible")){
+                   $("#rightNewsDiv").addClass("hideDiv");
+                   $("#leftBodyDiv").css("width","98%");
+                   $(obj).css("right","0");
+               }else{
+                   $("#rightNewsDiv").removeClass("hideDiv");
+                   $("#leftBodyDiv").css("width","66%");
+                   $(obj).css("right","32%");
+               }
+                scrolled();
+            }
+            
+            function scrollToDiv(offsetDiv){
+
+                
+                 offsetDimensions = $("#"+offsetDiv).offset();
+                 flashHeight = $("#flashContainer").height();
+                 if(flashHeight>10) addoffset = 0; else addoffset = 308;
+                 finalOffsetTop = offsetDimensions.top + addoffset - 40;
+                
+                 $(window).scrollTop(finalOffsetTop);
+            }
+            
+            function more(div){
+               
+                scrollToDiv(div);
+                        moreSpan = div+"More";
+                        sliders = $("#"+div).siblings('.paneContent').children('.slideThis');
+                        
+                        
+                        
+                        for(i=0;i<sliders.length;i++){
+                            slider = $(sliders[i]);
+                     
+                          if(slider.is(":visible")){
+                                slider.slideUp(1500, function(){}) ;
+                                if (document.getElementById(moreSpan)) $("#"+moreSpan).text("more..");
+                            }else{
+                             slider.slideDown(1500, function(){}) ;
+                                if (document.getElementById(moreSpan)) $("#"+moreSpan).text("less..");
+                            }
+                        }   
+                    }
+              
+              
+              function moreNoScroll(div){
+               
+              
+                        moreSpan = div+"More";
+                        sliders = $("#"+div).siblings('.paneContent').children('.slideThis');
+                        
+                        for(i=0;i<sliders.length;i++){
+                            slider = $(sliders[i]);
+                     
+                          if(slider.is(":visible")){
+                                slider.slideUp(1500, function(){}) ;
+                                if (document.getElementById(moreSpan)) $("#"+moreSpan).text("more..");
+                            }else{
+                             slider.slideDown(1500, function(){}) ;
+                                if (document.getElementById(moreSpan)) $("#"+moreSpan).text("less..");
+                            }
+                        }   
+                    }
+              
+              
+              function loadNews(div,contextMain){
+              /*    div = "#"+div;
+                 
+                  $(div).html(loadingHtml);
+                    // $(div).load('news.html', function() {});
+                    if(!contextMain){
+                        wrapper = "<ul id='ticker_02' class='ticker'>";
+                        $.ajax({url: 'news?count=10',cache:false,success: function(data){
+                                $(div).html(wrapper+data);
+                                setTimeout(tick2,7000);
+                                setInterval(function(){tick2 ()}, 7000);
+                            }
+                            
+                        });
+                    }
+                    else{
+                        wrapper = "<div class='paneTitle'>News and Events</div><ul class='ticker'>";
+                        $.ajax({url: 'news?count=50',cache:false,success: function(data){
+                                $(div).html(wrapper+data); 
+                                scrollToDiv(div);
+                              
+                            }
+                        });
+                    } */
+
+              }
+
+              function loadPage1(href) {
+                
+                 
+                  href = href.substring(href.indexOf('=') + 1);
+                  str = href.split('-');
+               // alert(str[0]+" "+str[1]+" "+str[2]);
+
+                    loadPage(str[0], str[1], str[2]);
+              }
+
+
+              
+              function loadPage(div, url, context) { //context has 0000 1-head, 2-more
+
+                  url1 = url;
+                  $("#" + div).html(loadingHtml);
+
+
+                  if (url.indexOf('?') >= 0) {
+                      url1 = url.substring(0, url.indexOf('?'));
+                  }
+
+                  if (url.indexOf("aspx") >= 0) url1 = url.substring(0, url.indexOf("aspx") - 1);
+
+                  if ((url.indexOf("aspx") < 0) && (url.indexOf("jpg") < 0)) url = url + ".aspx";
+
+
+
+                  if (div.indexOf("popUp") >= 0)
+                      $("#popUp").dialog("option", "title", context);
+
+                 
+
+                      $.ajax({ url: url, success: function (data) {
+
+                          $("#" + div).html(data);
+                         
+                          if (context == "slideWithMore") {
+
+                              more(url1);
+                              hide(url1 + "More");
+                          }
+                          else if (context == "noSlide") {
+                              scrollToDiv(div);
+                          } else if (context == "noScrollnoSlide") {
+
+                          }
+                          else if (context == "noSlideWithMore") {
+                              scrollToDiv(div);
+                              hide(url1 + "More");
+                          }
+
+                          if (div.indexOf("popUp") >= 0) {
+                              $("#popUp").dialog('open');
+                              $("#" + div).children('.paneTitle').removeClass('paneTitle').html("");
+
+                          }
+
+                          if ($('#' + div).parent('.popUp').length > 0) {
+                              //  alert( $('#popUp').height());
+                              height = 0;
+                              list = $('#popUp').children();
+                              for (i = 0; i < list.length; i++) {
+                                  height += $(list[i]).innerHeight();
+                              }
+                              //    alert(height);
+                              $('#popUp').height(height + 10);
+
+                              //   alert( $('#popUp').height());
+                          }
+
+                          /*alert ('data loaded');*/
+                      }
+
+                          /* ,error: function (xhr, ajaxOptions, thrownError) {
+                          alert(xhr.status + " : " + thrownError);    }*/
+                      });
+                 
+
+
+              }
+              
+         function hide(moreSpan){
+         //    alert(moreSpan);
+             if ($("#"+moreSpan).length > 0) {
+
+                  $("#"+moreSpan).addClass('hideDiv');
+             }
+         }
+
+        function loadPDF(url){
+          //  url = "pdfLoader.jsp?url="+url;
+
+           window.open(url,'','scrollbars=no,menubar=no,height=600,width=800,resizable=yes,toolbar=no,location=no,status=no');
+        /* var myPDF = new PDFObject({
+          url: url,
+          id: "myPDF",
+          width: "100%",
+          height: "600px",
+          pdfOpenParams: {
+            navpanes: 1,
+            statusbar: 0,
+            view: "FitH"
+
+          }
+        }).embed("bodyDiv");
+
+          */
+
+        /* obj ='<object data="'+url+'" wmode="transparent" type="application/pdf" width="100%" height="600px"></object>';
+
+           $("#bodyDiv").html(obj); */
+        }
+
+        function loadExams(div){
+
+              $("#"+div).html("");
+              $("#loadingSpinner").removeClass('hideDiv');
+
+
+                   wrapper = "<div class='paneTitle'>Results</div><ul class='ticker'>";
+                    $.ajax({url: 'exams?count=50',cache:true,success: function(data){
+                            $("#"+div).html(wrapper+data);/*alert ('data loaded');*/
+                             $("#loadingSpinner").addClass('hideDiv');
+                        }
+
+                    });
+                }
+
+                function impnotesPlacement() {
+
+                    if ($('#impNotesDiv').attr('disabled') == "disabled") {
+                        $('#impNotesDiv').addClass('hideDiv');
+                        return;
+                    }
+
+                    if (!$('#impNotesDiv').hasClass('hideDiv')) {
+
+                        var browserheight = $(window).height();
+                        var impNotesDivHeight = $('#impNotesDiv').height();
+                        $('#impNotesDiv').css('top', ((browserheight / 2) - (impNotesDivHeight / 2) + $(window).scrollTop()));
+
+                    }
+                }
+
+
+                function getParameter(paramName) {
+                    var searchString = window.location.search.substring(1),
+                    i, val, params = searchString.split("&");
+
+                    for (i = 0; i < params.length; i++) {
+                        val = params[i].split("=");
+                        if (val[0] == paramName) {
+                            return unescape(val[1]);
+                        }
+                    }
+                    return null;
+                }

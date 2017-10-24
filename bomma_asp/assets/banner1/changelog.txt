@@ -1,0 +1,2 @@
+Version 1.0.1.7556 - 28-Oct-11
+	- changed the text alignment when hPos is set to right

@@ -1,0 +1,131 @@
+/* 
+    Document   : spryMenu
+    Created on : Dec 22, 2011, 3:32:33 PM
+    Author     : Ram
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+
+
+ul#SpryMenu{
+     height: 30px;
+    position: absolute;
+    right: -2px;
+    top: 68px;
+}
+
+ul#SpryMenu li{
+	list-style:none;
+}
+
+li.mainMenuLeaf{
+	float:left;
+	position:relative;
+	margin:0 2px;
+	-moz-border-radius:4x 4px 0 0;
+}
+
+ul#SpryMenu li.mainMenuLeaf a.mainMenuLeafA{
+        -moz-border-radius: 10px 10px 0 0;
+
+	
+	min-width:60px;
+	_width:60px;
+	_overflow-x:visible;
+	white-space:nowrap;
+	
+        background-image: url("../images/b_meniu.jpg");
+        background-repeat: repeat-x;
+        background-position: 0 0;
+        color: #B7D6EC;
+        font-family: Arial,Helvetica,sans-serif;
+         font-size: 13px;
+        font-weight: bold;
+        margin-left: -3px;
+        padding: 13px 11px;
+        text-decoration: none;
+        display:block;
+        text-align: center;
+
+}
+
+
+ul#SpryMenu li.hasChildren a.mainMenuLeafA{
+     cursor:default;
+}
+	
+
+
+ul#SpryMenu li.mainMenuLeaf_h a.mainMenuLeafA{
+	background-position: 0 -46px;	
+	color:white;
+}
+
+ul#SpryMenu ul.subMenu{
+	position:absolute;
+	top:45px;
+	left:-3px;
+	background:#ECF5F5;
+	padding:3px;
+	display:none;
+	-moz-border-radius:0px 6px 6px 6px;
+        border:2px solid #FFFFFF;
+
+}
+
+ul#SpryMenu ul.subMenu li.subMenuLeaf{
+	position:relative;
+	border-bottom:1px solid white;	
+	color:#555555;
+	position:relative;
+}
+
+ul#SpryMenu ul.subMenu li.subMenuLeaf a{
+	text-decoration:none;
+	color:#555555;
+	font-size:0.9em;
+	position:relative;
+	display:block;
+	white-space:nowrap;
+	padding:3px;
+	margin-top:1px;
+
+}
+
+ul#SpryMenu ul.subMenu li.subMenuLeaf a:hover{
+	background-color:#555555;
+	color:white;
+}
+
+ul#SpryMenu ul.subMenu li.hasChildren{
+	z-index:1;
+}
+ul#SpryMenu ul.subMenu li.hasChildren a.hasChildrenA{
+	background-image:url(images/SpryMenuBarRight.gif);
+	background-position:right center;
+	background-repeat:no-repeat;
+}
+
+ul#SpryMenu ul.subMenu .subMenuLeaf .subMenuLeaf a{
+	background-image:none;
+}
+
+ul#SpryMenu ul.subMenu li.hasChildren ul.subMenu{
+	left:90%;
+	margin-top:-25px;
+	z-index:2;
+}
+
+.getMoreWidth{
+	display:block;
+	width:100px;
+	height:0px;
+	margin-top:-1px;
+	_margin-top:-25px;
+}

@@ -1,0 +1,20 @@
+﻿body{font-family:arial,hevetica,sans-serif}
+img.feedbackFormImg{display:block;position:absolute;z-index:-1}
+.input,#send{font-size:24px;margin-top:10px}
+.input label{display:block;text-decoration:underline}
+.input input,.input textarea{padding:1px}
+#send{cursor:pointer}
+.warning,.goodtogo{clear:right;color:red;float:right;font-size:12px;height:20px;line-height:20px;padding-right:10px}
+.end{position:relative}
+.footer1 form.feedbackFormClass{height:202px;position:relative}
+form.feedbackFormClass input.feedbackName{border:medium none;left:80px;position:absolute;top:42px;width:222px}
+form.feedbackFormClass input.feedbackEmail{border:medium none;left:80px;position:absolute;top:74px;width:222px}
+form.feedbackFormClass .feedbackComment{border:medium none;font-size:12px;height:69px;left:80px;font-family:arial,hevetica,sans-serif;position:absolute;top:106px;width:223px;white-space:normal}
+form.feedbackFormClass input.feedbackSendbutton{background:none repeat scroll 0 0 transparent;border:medium none;height:26px;left:228px;position:absolute;top:183px;width:83px;cursor:pointer}
+.feedbackResponseClass{visibility:hidden;position:absolute}
+.hideDiv{display:none}
+#formProcessing{background:none repeat scroll 0 0 #FFF;height:100%;opacity:0.4;filter:alpha(opacity=40);position:absolute;width:100%;z-index:10}
+#formProcessing img{width:100%}
+.kaptchaImg{bottom:4px;left:32px;position:absolute}
+.kaptchaInput{border:1px solid #9F9F9F;bottom:7px;color:#888;height:21px;left:116px;position:absolute;width:90px;-moz-border-radius:8px;-webkit-border-radius:10px;-border-radius:10px}
+.feedbackValidation{color:#000;font-size:12px;font-weight:700;left:133px;position:absolute;text-align:center;top:0}

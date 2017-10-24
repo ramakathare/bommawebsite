@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This is the full list of specific particularities which you can set for each image. Next to each property is the corresponding overall setting of the Banner.
+When you specify one of these properties as an XML attribute for each image, the corresponding overall setting of the Banner will be ignored.
+
+Particular Property				Overall Property
+_____________________________________________________________
+effect							imageEffects -> type
+zoompercent						imageEffects -> zoomPercent
+dur								imageEffects -> duration
+direction						imageEffects -> direction
+hzoompos						imageEffects -> hZoomPos
+vzoompos						imageEffects -> vZoomPos
+hpos							textOptions -> hPos
+vpos							textOptions -> vPos
+width							textOptions -> width
+height							textOptions -> height
+slide							textEffects -> slide
+appear							textEffects -> appear
+func							textEffects -> function
+type							textBackground -> type
+transition (a transition ID from the transitions list)
+duration (duration for each image but change the value of autoTiming to false in settings.xml file)
+-->
+
+<slideshow>
+
+	<photo image="images/Optimized-01.jpg" url="https://picasaweb.google.com/109998487761933095274" target="_blank" duration="2" effect="none" zoompercent="200" direction="out" hzoompos="left" vzoompos="right">
+	<![CDATA[<head>Bomma Institute of Technology and Science</head><body>BTech  MTech  Polytechnic  MCA  MBA</body>]]></photo>
+	
+	<photo image="images/Optimized-02.jpg" url="https://picasaweb.google.com/109998487761933095274" target="_blank" duration="2" effect="none" direction="bottom">
+	<![CDATA[<head>Bomma Institute of Informatics</head><body>MBA  MCA</body>]]></photo>
+	
+	<photo image="images/Optimized-03.jpg" url="https://picasaweb.google.com/109998487761933095274" target="_blank" duration="2" effect="none" zoompercent="200" direction="out" hzoompos="center" vzoompos="center">
+	<![CDATA[<head>Bomma Institute of Pharmacy</head><body>BPharmacy  MPharmacy</body>]]></photo>
+
+	<photo image="images/Optimized-04.jpg" url="https://picasaweb.google.com/109998487761933095274" target="_blank" duration="2" effect="none" zoompercent="200" direction="out" hzoompos="center" vzoompos="center">
+	<![CDATA[<head>Bomma Brilliant Grammar School</head><body>Nursery  to  X</body>]]></photo>
+	
+</slideshow>

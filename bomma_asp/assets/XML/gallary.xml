@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Document   : gallary.xml
+    Created on : December 13, 2011, 9:41 AM
+    Author     : Ram
+    Description:
+        Purpose of the document follows.
+-->
+
+<root>
+  
+    <folder>
+        <path>/assets/gallaryImages/Freshers_Party_2011</path>
+        <url>https://picasaweb.google.com/109998487761933095274/Freshers_Party_2011</url>
+        <name>Freshers Party 2011</name>
+    </folder>
+    <folder>
+        <path>/assets/gallaryImages/Induction_Programme_2011</path>
+        <url>https://picasaweb.google.com/109998487761933095274/Induction_Programme_2011</url>
+        <name>Induction Programme 2011</name>
+    </folder>
+    
+    <folder>
+        <path>/assets/gallaryImages/Advertisement_2011</path>
+        <url>http://www.youtube.com/watch?v=WDXD10h4UtU</url>
+        <name>Advertisement 2011</name>
+    </folder>
+     <folder>
+        <path>/assets/gallaryImages/Laboratories</path>
+        <url>https://picasaweb.google.com/109998487761933095274/Laboratories</url>
+        <name>Laboratories</name>
+    </folder>
+     <folder>
+        <path>/assets/gallaryImages/Cloud_Computing_Seminar</path>
+        <url>https://picasaweb.google.com/109998487761933095274/Cloud_Computing_Seminar</url>
+        <name>Cloud Computing Seminar</name>
+    </folder>
+     <folder>
+        <path>/assets/gallaryImages/Ignizo_2kX</path>
+        <url>https://picasaweb.google.com/109998487761933095274/Ignizo_2kX</url>
+        <name>Ignizo 2kX</name>
+    </folder>
+</root>

@@ -1,0 +1,305 @@
+
+/* CSS Document */
+.hideDiv{
+	display:none;
+}
+
+.gallaryContainer .paneContent{
+    position:relative;
+    text-align: center;
+
+}
+.gallaryContainer{
+	
+	
+}
+.gallaryBox{
+
+    border: 3px solid #DBDBDB;
+    float: left;
+    height: 121px;
+    margin: 0.1em;
+    width: 161px;
+    position:relative;
+
+   /* _margin: 0.15em; */
+    
+}
+
+.gallaryNameBG
+{
+    background: none repeat scroll 0 0 #000000;
+    height: 100%;
+    opacity: 0.4;
+	-ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+	filter: alpha(opacity=40);			
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+.gallaryName
+{
+    font-size: 0.9em;
+    text-align:center;
+    left: 0;
+    padding: 1px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.gallaryName1 {
+    color: white;
+    opacity: 1;
+    position: relative;
+    width: 161px;
+    z-index: 23;
+}
+
+
+
+
+.gallerydesctext, .gallerydescbg{
+	padding: 1px 0;
+}
+
+.newsEventsWrapper{
+	height:330px;
+	overflow:hidden;
+	padding:5px;
+        margin-top:-5px;
+        margin-bottom: 5px;
+       
+        position:relative;
+}
+
+.ticker li{
+	border-bottom:1px dotted #999999; 
+	margin-bottom:5px;
+	padding-top:3px;
+        padding-bottom:2px;
+}
+
+.ticker li.alt div{
+/*	color:#FEAC1C;*/
+}
+
+.ticker div{
+
+}
+
+.ticker a{
+	color:#3380B8;
+}
+
+.ticker .colorBlue
+{
+    color:#034F71;
+}
+
+.hitCounter{
+	margin:10px 6px;
+}
+
+.bodyMatter2, .bodyMatter3, .rightMatter2{
+
+}
+
+.leftMatter2{
+	margin-top:1em;
+}
+
+
+.contactForm{
+    -moz-border-radius: 10px 10px 10px 10px;
+    background: none repeat scroll 0 0 #FEAC1C;
+    padding: 0 8px 2px;
+    position: relative;
+    float:left;
+    margin-left: 10px;
+    background:#F1F9FF;
+    border:1px solid #CCCCCC;
+}
+
+
+.faceBook{
+    float: right;
+   
+  
+     -moz-border-radius: 10px 10px 10px 10px;
+     border:1px solid #CCCCCC;
+     padding:3px 2px;
+     position:relative;
+
+}
+
+.clickLike {
+    background-image: url("../images/clickLike.jpg");
+    background-repeat: no-repeat;
+    color: red;
+    font-size: 11px;
+    height: 33px;
+    padding: 0 25px;
+    position: absolute;
+    right: -15px;
+    top: 33px;
+    width: 220px;
+    z-index:1;
+}
+
+.todaysQuote{
+
+    -moz-border-radius: 10px 10px 10px 10px;
+    border: 1px solid #CCCCCC;
+    
+    height: 221px;
+   
+    width: 255px;
+    float:left;
+    
+    background:#FFFFFF;
+     
+
+}
+.todaysQuoteWrapper{
+    padding:6px;
+   
+}
+
+.todaysQuote .todaysQuoteHeading{
+
+    -moz-border-radius: 6px 6px 0 0;
+     background:#FDAC1D;
+    color:#000000;
+    font-weight: bold;
+    height: 33px;
+    line-height: 27px;
+    margin: 2px 2px 10px;
+    padding-left: 8px;
+
+}
+
+.todaysQuoteContent{
+    font-size: 1.25em;
+    font-family: cursive;
+    text-align: center;
+    color:#034F71;
+}
+
+.moreContainer{
+    text-align: right;
+    padding-top: 10px;
+}
+
+.more{
+    cursor: pointer;
+    font-size: 1em;
+   
+    text-align: right;
+}
+
+.slideThis{
+    display:none;
+   
+}
+
+.slideThis li
+{
+    padding-left:2px;
+}
+
+.heading{
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 10px;
+    padding-left:2px;
+}
+
+.groupOfInst{
+    margin-left: 35px;
+    margin-top: 6px;
+    width: 100%;
+}
+
+.vscrollerbase{
+    top:0.2em;
+}
+
+.chairmanImg{
+    float:left;
+    width:50px;
+    margin-right:5px;
+}
+
+.vBarLeft{
+
+    background-image: url("../images/vBar.jpg");
+    background-repeat : no-repeat;
+    background-position: 1px 0;
+    height:250px;
+    left:-13px;
+    position: absolute;
+    top: 10%;
+    width: 16px;
+    cursor:pointer;
+}
+.vBarRight{
+    background-image: url("../images/vBar.jpg");
+    background-repeat : no-repeat;
+    background-position: 6px 0;
+    height:250px;
+    right:32%;
+    position: absolute;
+    top: 10%;
+    width: 16px;
+    cursor:pointer;
+}
+
+.vBarLeftContainer{
+    position: relative;
+}
+
+body #yui-main div.rightNewsDiv{
+    width:31.5%;
+}
+
+#leftBodyDiv{
+    position: relative;
+}
+
+.loadingDiv{
+    padding-top:50px;
+    text-align: center;
+    position: absolute;
+    text-align: center;
+    width: 95%;
+    z-index: 5;
+}
+
+#ft{
+    background: transparent url("../images/bg.gif");
+    color:white;
+    padding: 10px;
+    text-align: center;
+    margin-top:15px;
+}
+.footer2 li{
+  
+    border-left:1px solid #AAAAAA;
+    display: inline;
+    padding:0px 5px;
+}
+
+.footer2 li.first{
+    border-left:none;
+}
+
+.footer2 li a, .footer2 li:visited{
+    color:#CCCCCC;
+}
+
+.floatRight
+{
+    float:right;
+}
